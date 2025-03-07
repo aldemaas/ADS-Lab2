@@ -2,18 +2,14 @@
 
 library(tidyverse)
 
-# Defina o caminho para o diretório onde estão os arquivos txt
-caminho <- "results_questao2"  # substitua pelo caminho real
+caminho <- "results_questao2"  
 
-# Lista os arquivos txt no diretório
 arquivos <- list.files(path = caminho, pattern = "\\.txt$", full.names = TRUE)
 
-# Lê e combina os arquivos em um único data frame
 dados_questao2 <- arquivos %>%
   map_df(~ read_delim(.x, delim = " ", locale = locale(decimal_mark = ","), col_names = TRUE, trim_ws = TRUE)) |> 
   arrange(TaxaDeChegadaMedia)
 
-# Visualiza as primeiras linhas
 head(dados_questao2)
 
 
@@ -30,19 +26,15 @@ ggplot(dados_questao2, aes(x = TaxaDeChegadaMedia, y = TempoMedioDeResposta)) +
 
 
 ```{r}
-library(tidyverse)
-# Defina o caminho para o diretório onde estão os arquivos txt
-caminho <- "results_questao3"  # substitua pelo caminho real
 
-# Lista os arquivos txt
+caminho <- "results_questao3"  
+
 arquivos <- list.files(path = caminho, pattern = "\\.txt$", full.names = TRUE)
 
-# Lê e combina os arquivos em um único data frame
 dados_questão3 <- arquivos |>  
   map_df(~ read_delim(.x, delim = " ", locale = locale(decimal_mark = ","), trim_ws = TRUE)) |> 
   arrange(NumServidores)
 
-# Visualiza as primeiras linhas
 dados_questão3
 
 ```
