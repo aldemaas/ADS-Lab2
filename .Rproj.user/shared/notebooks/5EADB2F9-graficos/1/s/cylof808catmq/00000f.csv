@@ -1,0 +1,83 @@
+"0","library(tidyverse)"
+"0","# Defina o caminho para o diretório onde estão os arquivos txt"
+"0","caminho <- ""results_questao3""  # substitua pelo caminho real"
+"0",""
+"0","# Lista os arquivos txt"
+"0","arquivos <- list.files(path = caminho, pattern = ""\\.txt$"", full.names = TRUE)"
+"0",""
+"0","# Lê e combina os arquivos em um único data frame"
+"0","dados_questão3 <- arquivos |>  "
+"0","  map_df(~ read_delim(.x, delim = "" "", locale = locale(decimal_mark = "",""), trim_ws = TRUE)) |> "
+"0","  arrange(NumServidores)"
+"2","[1mRows: [22m[34m1[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "" ""
+[32mdbl[39m (7): TaxaDeChegadaMedia, TempoDeServicoMedio, NumServidores, RequisicoesSubmetidas, ..."
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"2","[1mRows: [22m[34m1[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "" ""
+[32mdbl[39m (7): TaxaDeChegadaMedia, TempoDeServicoMedio, NumServidores, RequisicoesSubmetidas, ..."
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"2","[1mRows: [22m[34m1[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "" ""
+[32mdbl[39m (7): TaxaDeChegadaMedia, TempoDeServicoMedio, NumServidores, RequisicoesSubmetidas, ..."
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"2","[1mRows: [22m[34m1[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "" ""
+[32mdbl[39m (7): TaxaDeChegadaMedia, TempoDeServicoMedio, NumServidores, RequisicoesSubmetidas, ..."
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"2","[1mRows: [22m[34m1[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "" ""
+[32mdbl[39m (7): TaxaDeChegadaMedia, TempoDeServicoMedio, NumServidores, RequisicoesSubmetidas, ..."
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"2","[1mRows: [22m[34m1[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "" ""
+[32mdbl[39m (7): TaxaDeChegadaMedia, TempoDeServicoMedio, NumServidores, RequisicoesSubmetidas, ..."
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"2","[1mRows: [22m[34m1[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "" ""
+[32mdbl[39m (7): TaxaDeChegadaMedia, TempoDeServicoMedio, NumServidores, RequisicoesSubmetidas, ..."
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"2","[1mRows: [22m[34m1[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "" ""
+[32mdbl[39m (7): TaxaDeChegadaMedia, TempoDeServicoMedio, NumServidores, RequisicoesSubmetidas, ..."
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"2","[1mRows: [22m[34m1[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "" ""
+[32mdbl[39m (7): TaxaDeChegadaMedia, TempoDeServicoMedio, NumServidores, RequisicoesSubmetidas, ..."
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"2","[1mRows: [22m[34m1[39m [1mColumns: [22m[34m7[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "" ""
+[32mdbl[39m (7): TaxaDeChegadaMedia, TempoDeServicoMedio, NumServidores, RequisicoesSubmetidas, ..."
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","# Visualiza as primeiras linhas"
+"0","dados_questão3"

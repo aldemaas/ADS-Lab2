@@ -1,0 +1,5 @@
+"0","ggplot(dados_questão3, aes(x = NumServidores, y = TempoMedioDeResposta))+"
+"0","  geom_point()+"
+"0","  geom_line(color = ""blue"")+"
+"0","    scale_y_continuous(limits = c(0, 15), breaks = (seq(0, 15, by = 5)))+"
+"0","  scale_x_continuous(breaks = unique(dados_questão3$NumServidores))"
